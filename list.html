@@ -2,9 +2,59 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>排行榜</title>
+    <title>卿风音乐</title>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/list.css"/>
 </head>
 <body>
-
+<header>
+    <div class="wrapper">
+        <a href="#">
+            <img src="img/music.png" alt=""/>
+            <h2>卿风音乐</h2>
+        </a>
+        <label>
+            <input type="text"/>
+        </label>
+        <img src="img/search.png" alt="" class="search"/>
+        <ul>
+            <li><a href="">客服中心</a></li>
+            <li><a href="" class="line">会员中心</a></li>
+        </ul>
+        <div class="btn">
+            <a href="login.html" class="login">登录</a>
+            <a href="register.html" class="register">注册</a>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="wrapper">
+        <ul class="navigation">
+            <li><a href="index.html">首页</a></li>
+            <li class="selected"><a href="list.html">榜单</a></li>
+            <li><a href="">下载客户端</a></li>
+            <li><a href="">MV</a></li>
+            <li><a href="">歌手</a></li>
+        </ul>
+    </div>
+    <img id="picture" src="img/图片4.png" />
+</nav>
 </body>
+<script>
+    var i=4;
+    onload=function(){
+        setInterval(showImg,3000);
+    };
+    function showImg(){
+        var img=document.getElementById('picture');
+        i++;
+        img.src="img/图片"+i+".png";
+        if(i>=9){
+            i=4;
+        }
+    }
+</script>
 </html>

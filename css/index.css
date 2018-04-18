@@ -1,103 +1,4 @@
-body{
-    height: 2000px;
-}
-header{
-    position: relative;
-}
-header img{
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin-top: 20px;
-    float: left;
-}
-header h2{
-    display: inline-block;
-    float: left;
-    margin-top: 30px;
-    color: black;
-}
-header input{
-    height: 36px;
-    width: 300px;
-    margin-top: 30px;
-    margin-left: 80px;
-    text-indent: 12px;
-    outline: none;
-    font-size: 18px;
-}
-header .search{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 608px;
-    top: 16px;
-    cursor: pointer;
-}
-header ul{
-    margin-top: -25px;
-    margin-left: 680px;
-}
-header ul .line{
-    border-right: 1px solid #777;
-    padding-right: 30px;
-    text-align: right;
-}
-header li{
-    float: left;
-}
-header li a{
-    color: #777;
-    margin-left: 50px;
-}
-header li a:hover{
-    color: lightcoral;
-}
-header .btn a{
-    display: inline-block;
-    width: 50px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 4px;
-    font-size: 14px;
-}
-header .login{
-    margin-left: 50px;
-    margin-right: 20px;
-    color: white;
-    background: lightcoral;
-}
-header .login:hover{
-    background: hotpink;
-}
-header .register{
-    color: #777777;
-    border: 1px solid #777777;
-}
-header .register:hover{
-    border: 1px solid lightcoral;
-    color: lightcoral;
-}
-nav{
-    height: 55px;
-    margin-top: 20px;
-    background: #2c323b;
-}
-nav .selected{
-    background: lightcoral;
-}
-nav .navigation li{
-    float: left;
-    width: 92px;
-    height: 55px;
-    line-height: 55px;
-    text-align: center;
-    cursor: pointer;
-}
-nav .navigation a{
-    color: white;
-}
+
 section{
     margin-top: 420px;
     position: relative;
@@ -138,6 +39,7 @@ section #right a img{
 }
 aside{
     margin-top: 50px;
+    height: 500px;
 }
 aside h3{
     font-size: 30px;
