@@ -8,35 +8,108 @@
     <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
-    <header>
-       <div class="wrapper">
-            <a href="#">
-                <img src="img/音乐.png" alt=""/>
-                <h2>卿风音乐</h2>
+<header>
+    <div class="wrapper">
+        <a href="#">
+            <img src="img/music.png" alt=""/>
+            <h2>卿风音乐</h2>
+        </a>
+        <label>
+            <input type="text"/>
+        </label>
+        <img src="img/search.png" alt="" class="search"/>
+        <ul>
+            <li><a href="">客服中心</a></li>
+            <li><a href="" class="line">会员中心</a></li>
+        </ul>
+        <div class="btn">
+            <a href="login.html" class="login">登录</a>
+            <a href="register.html" class="register">注册</a>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="wrapper">
+        <ul class="navigation">
+            <li class="selected"><a href="">首页</a></li>
+            <li><a href="list.html">榜单</a></li>
+            <li><a href="">下载客户端</a></li>
+            <li><a href="">MV</a></li>
+            <li><a href="">歌手</a></li>
+        </ul>
+    </div>
+    <img id="picture" src="img/图片4.png" />
+</nav>
+<section>
+    <div class="wrapper">
+        <div id="left">
+            <h3>精选歌单</h3><br/>
+            <a href="list.html" class="more">更多</a>
+            <a href="list.html">
+                <img src="img/1.png" alt=""/>
             </a>
-            <label>
-                <input type="text"/>
-            </label>
-            <img src="img/搜索.png" alt="" class="search"/>
-            <ul>
-                <li><a href="">客服中心</a></li>
-                <li><a href="" class="line">会员中心</a></li>
-            </ul>
-            <div class="btn">
-               <a href="login.html" class="login">登录</a>
-               <a href="register.html" class="register">注册</a>
-            </div>
         </div>
-    </header>
-    <nav>
-        <div class="wrapper">
-            <ul class="navigation">
-                <li class="selected"><a href="">首页</a></li>
-                <li><a href="">榜单</a></li>
-                <li><a href="">下载客户端</a></li>
-                <li><a href="">更多</a></li>
-            </ul>
+        <div id="right">
+            <h3>热门歌单</h3>
+            <a href="list.html">
+                <img src="img/2.png" alt=""/>
+            </a>
+
         </div>
-    </nav>
+
+    </div>
+</section>
+<aside>
+    <div class="wrapper">
+        <div class="wrap1">
+            <h3>MV</h3> <br/>
+            <a href="station.html">
+                <img src="img/7.png" alt=""/>
+            </a>
+        </div>
+        <div class="wrap2">
+            <h3>热门歌手</h3>
+            <span onclick="reP1()" id="china">华语</span>
+            <span onclick="reP2()" id="europe">欧美</span>
+            <span onclick="reP3()" id="kkc">日韩</span>
+            <a href="singer.html">
+                <img src="img/4.png" id="oImg1" style="display:block" width="320px" height="300px">
+                <img src="img/5.png" id="oImg2" style="display:none" width="320px" height="300px">
+                <img src="img/6.png" id="oImg3" style="display:none" width="320px" height="300px">
+            </a>
+        </div>
+    </div>
+</aside>
+
 </body>
+<script>
+    var i=4;
+    onload=function(){
+        setInterval(showImg,3000);
+    };
+    function showImg(){
+        var img=document.getElementById('picture');
+        i++;
+        img.src="img/图片"+i+".png";
+        if(i>=9){
+            i=4;
+        }
+    }
+    function reP1(){
+        document.getElementById('oImg1').style.display = "block";
+        document.getElementById('oImg2').style.display = "none";
+        document.getElementById('oImg3').style.display = "none";
+    }
+    function reP2(){
+        document.getElementById('oImg1').style.display = "none";
+        document.getElementById('oImg2').style.display = "block";
+        document.getElementById('oImg3').style.display = "none";
+    }
+    function reP3(){
+        document.getElementById('oImg1').style.display = "none";
+        document.getElementById('oImg2').style.display = "none";
+        document.getElementById('oImg3').style.display = "block";
+    }
+
+</script>
 </html>

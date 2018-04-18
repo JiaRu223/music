@@ -1,3 +1,6 @@
+body{
+    height: 2000px;
+}
 header{
     position: relative;
 }
@@ -86,11 +89,87 @@ nav .selected{
 }
 nav .navigation li{
     float: left;
-    /*padding: 30px 0;*/
-
+    width: 92px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    cursor: pointer;
 }
 nav .navigation a{
     color: white;
-    margin-top: 18px;
-    margin-left: 50px;
 }
+section{
+    margin-top: 420px;
+    position: relative;
+}
+section h3{
+    font-size: 30px;
+    color: lightcoral;
+    display: inline-block;
+}
+section #left{
+    position: relative;
+    width: 660px;
+}
+section .more{
+    position: absolute;
+    top: 20px;
+    left: 610px;
+    color: #999;
+}
+section .more:hover{
+    color: lightcoral
+}
+section #left img{
+    margin-top: 20px;
+}
+section #right h3{
+    position: absolute;
+    top: 6px;
+    right: 400px;
+}
+section #right a{
+    position: relative;
+}
+section #right a img{
+    position: absolute;
+    top: -330px;
+    left: 710px;
+}
+aside{
+    margin-top: 50px;
+}
+aside h3{
+    font-size: 30px;
+    color: lightcoral;
+    display: inline-block;
+}
+aside .wrap1{
+    width: 670px;
+    float: left;
+}
+aside .wrap1 img{
+    margin-top: 20px;
+    width: 663px;
+    height: 350px;
+}
+aside .wrap2{
+    margin-left: 48px;
+    float: left;
+    width: 330px;
+}
+aside .wrap2 span{
+    margin-left: 20px;
+    color: #999;
+    cursor: pointer;
+}
+aside .wrap2 span:hover{
+    color: lightcoral;
+}
+aside .wrap2 a{
+    margin-left: -20px;
+}
+aside .wrap2 img{
+    height: 330px;
+}
+
