@@ -1,0 +1,83 @@
+body{
+    height: 1220px;
+}
+section{
+    margin-top: 30px;
+    height: 380px;
+}
+section video{
+    width: 673px;
+    height: 330px;
+    float: left;
+    margin-right: 50px;
+    cursor: pointer;
+}
+section ul{
+    float: left;
+}
+section #title{
+    background-color: #dea32c;
+    width: 320px;
+    height: 30px;
+    color: white;
+    line-height: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+section li{
+    background-color: #555555;
+    height: 30px;
+}
+section a{
+    display: inline-block;
+    color: white;
+    width: 320px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+aside ul{
+    width: 210px;
+    height: 210px;
+    float: left;
+}
+aside #classify{
+    background-color: #cfcfcf;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-weight: normal;
+}
+aside li{
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+aside li:hover{
+    background-color: lightcoral;
+    color: white;
+}
+aside h3{
+    width: 820px;
+    height: 30px;
+    display: inline-block;
+    float: left;
+    background-color: #cfcfcf;
+    margin-left: 24px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+}
+aside #list img{
+    margin-left: 24px;
+    margin-top: 20px;
+    width: 820px;
+}
+footer{
+    margin-top: 50px;
+}

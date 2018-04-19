@@ -2,9 +2,70 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>歌手</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/singer.css"/>
 </head>
 <body>
+<header>
+    <div class="wrapper">
+        <a href="#">
+            <img src="img/music.png" alt=""/>
+            <h2>卿风音乐</h2>
+        </a>
+        <label>
+            <input type="text"/>
+        </label>
+        <img src="img/search.png" alt="" class="search"/>
+        <ul>
+            <li><a href="">客服中心</a></li>
+            <li><a href="" class="line">会员中心</a></li>
+        </ul>
+        <div class="btn">
+            <a href="login.html" class="login">登录</a>
+            <a href="register.html" class="register">注册</a>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="wrapper">
+        <ul class="navigation">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="list.html">榜单</a></li>
+            <li><a href="play.html">音乐播放</a></li>
+            <li><a href="" onclick="popup()">下载客户端</a></li>
+            <li><a href="mv.html">MV</a></li>
+            <li class="selected"><a href="singer.html">歌手</a></li>
+        </ul>
+    </div>
+</nav>
+<section>
+    <div class="wrapper">
+        <ul>
+            <li class="all">全部歌手</li>
+            <li>华语男歌手</li>
+            <li>华语女歌手</li>
+            <li>华语组合<br/><br/></li>
+            <li>日韩男歌手</li>
+            <li>日韩女歌手</li>
+            <li>日韩组合<br/><br/></li>
+            <li>欧美男歌手</li>
+            <li>欧美女歌手</li>
+            <li>欧美组合<br/><br/></li>
+            <li>其他</li>
+        </ul>
+        <img src="img/13.png" alt=""/>
+    </div>
+    <footer>
+        <img src="img/9.png" alt=""/>
+    </footer>
 
+</section>
 </body>
+<script>
+    function popup(){
+        alert("下载客户端");
+    }
+</script>
 </html>

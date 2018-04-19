@@ -1,0 +1,32 @@
+section{
+    margin-top: 30px;
+}
+section ul{
+    width: 210px;
+    height: 470px;
+    float: left;
+}
+section .all{
+    background-color: lightcoral;
+    color: white;
+}
+section li{
+    color: #555555;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+section li:hover{
+    color: white;
+    background-color: lightcoral;
+}
+section img{
+    float: left;
+    margin-left: 2px;
+    cursor: pointer;
+    margin-bottom: 30px;
+
+}

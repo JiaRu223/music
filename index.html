@@ -33,9 +33,10 @@
         <ul class="navigation">
             <li class="selected"><a href="">首页</a></li>
             <li><a href="list.html">榜单</a></li>
-            <li><a href="">下载客户端</a></li>
-            <li><a href="">MV</a></li>
-            <li><a href="">歌手</a></li>
+            <li><a href="play.html">音乐播放</a></li>
+            <li><a href="" onclick="popup()">下载客户端</a></li>
+            <li><a href="mv.html">MV</a></li>
+            <li><a href="singer.html">歌手</a></li>
         </ul>
     </div>
     <img id="picture" src="img/图片4.png" />
@@ -112,6 +113,9 @@
         document.getElementById('oImg1').style.display = "none";
         document.getElementById('oImg2').style.display = "none";
         document.getElementById('oImg3').style.display = "block";
+    }
+    function popup(){
+        alert("下载客户端");
     }
 
 </script>

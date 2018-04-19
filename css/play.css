@@ -1,0 +1,24 @@
+section{
+    background-color: #d1c7b7;
+    height: 1250px;
+}
+section img{
+    float: left;
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 400px;
+    height: 400px;
+}
+section p{
+    float: left;
+    margin-top: 50px;
+    margin-left: 100px;
+    color: #555555;
+    line-height: 30px;
+}
+section audio{
+     width: 1000px;
+     height: 50px;
+     margin-left: 100px;
+    margin-top: 50px;
+}

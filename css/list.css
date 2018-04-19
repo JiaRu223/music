@@ -1,0 +1,79 @@
+section aside{
+    width: 220px;
+    border: 2px solid #999;
+    float: left;
+}
+section{
+    margin-top: 50px;
+}
+section h3{
+    color: #555;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+section li{
+    width: 210px;
+    color: #555;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+section li:hover{
+    background: lightcoral;
+}
+section .selected{
+    background: lightcoral;
+}
+.nav_main{
+    float: left;
+    margin-left: 100px;
+    width: 700px;
+}
+.nav_main h3{
+    display: inline-block;
+    margin-right: 50px;
+    color: #555;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.nav_main span{
+    color: #555555;
+}
+.nav_main .btn{
+    margin-left: 260px;
+    color: white;
+    display: inline-block;
+    background: lightcoral;
+    width: 120px;
+    height: 34px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 34px;
+}
+.nav_main button{
+    width: 60px;
+    height: 30px;
+    background-color: #f6f5ec;
+    border-radius: 4px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #555555;
+    outline: none;
+}
+.nav_main a{
+    display: inline-block;
+    color: #555555;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.nav_main p{
+    margin-top: 30px;
+    display: inline-block;
+    margin-left: 200px;
+    color: #555555;
+    margin-bottom: 120px;
+}
+

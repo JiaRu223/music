@@ -2,9 +2,75 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>注册</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/register.css"/>
 </head>
 <body>
-
+<header>
+    <div class="wrapper">
+        <a href="#">
+            <img src="img/music.png" alt=""/>
+            <h2>卿风音乐</h2>
+        </a>
+        <label>
+            <input type="text"/>
+        </label>
+        <img src="img/search.png" alt="" class="search"/>
+        <ul>
+            <li><a href="">客服中心</a></li>
+            <li><a href="" class="line">会员中心</a></li>
+        </ul>
+        <div class="btn">
+            <a href="login.html" class="login">登录</a>
+            <a href="register.html" class="register">注册</a>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="wrapper">
+        <ul class="navigation">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="list.html">榜单</a></li>
+            <li><a href="play.html">音乐播放</a></li>
+            <li><a href="" onclick="popup()">下载客户端</a></li>
+            <li><a href="mv.html">MV</a></li>
+            <li><a href="singer.html">歌手</a></li>
+        </ul>
+    </div>
+</nav>
+<section>
+    <div class="wrapper">
+         <h3>用户注册</h3>
+            <form>
+                <label>
+                    *手机号码:<input type="text" class="num"/>
+                </label>
+                <label>
+                    *短信验证:<input type="text" maxlength="6" class="note"/>
+                    <button>获取短信</button>
+                </label>
+                <label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*密码:<input type="password" class="num"/>
+                </label>
+                <label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*性别:
+                    <input type="radio" name="sex" value="male" class="sex">男</input>
+                    <input type="radio" name="sex" value="female" class="sex">女</input>
+                </label>
+                <label>
+                    <input type="radio" class="agree">我已经认真阅读并同意用户协议、隐私政策</input>
+                </label>
+                <button class="reg">注册</button>
+            </form>
+        <a href="login.html">已有账号?登录</a>
+    </div>
+</section>
 </body>
+<script>
+    function popup(){
+        alert("下载客户端");
+    }
+</script>
 </html>

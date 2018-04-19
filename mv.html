@@ -2,9 +2,88 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>MV</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/mv.css"/>
 </head>
 <body>
+<header>
+    <div class="wrapper">
+        <a href="#">
+            <img src="img/music.png" alt=""/>
+            <h2>卿风音乐</h2>
+        </a>
+        <label>
+            <input type="text"/>
+        </label>
+        <img src="img/search.png" alt="" class="search"/>
+        <ul>
+            <li><a href="">客服中心</a></li>
+            <li><a href="" class="line">会员中心</a></li>
+        </ul>
+        <div class="btn">
+            <a href="login.html" class="login">登录</a>
+            <a href="register.html" class="register">注册</a>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="wrapper">
+        <ul class="navigation">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="list.html">榜单</a></li>
+            <li><a href="play.html">音乐播放</a></li>
+            <li><a href="" onclick="popup()">下载客户端</a></li>
+            <li class="selected"><a href="">MV</a></li>
+            <li><a href="singer.html">歌手</a></li>
+        </ul>
+    </div>
+</nav>
+<section>
+    <div class="wrapper">
+        <video src="img/mv.mp4" autoplay="autoplay" controls="controls"></video>
+        <div id="hot_list">
+            <ul>
+                <li id="title">MV热播总排行</li>
+                <li><a href="">1 &nbsp; 儿童歌曲-我的小猪</a></li>
+                <li><a href="">2 &nbsp; 筷子兄弟-小苹果</a></li>
+                <li><a href="">3 &nbsp; 儿童歌曲-小跳蛙</a></li>
+                <li><a href="">4 &nbsp; 筷子兄弟-小水果</a></li>
+                <li><a href="">5 &nbsp; 儿童歌曲-我的好妈妈</a></li>
+                <li><a href="">6 &nbsp; 儿童歌曲-小毛驴</a></li>
+                <li><a href="">7 &nbsp; 儿童歌曲-小燕子</a></li>
+                <li><a href="">8 &nbsp; 杨烁-找朋友</a></li>
+                <li><a href="">9 &nbsp; 儿童歌曲-拔萝卜</a></li>
+                <li><a href="">10 &nbsp; 贾乃亮-大王叫我来巡山</a></li>
+
+            </ul>
+        </div>
+    </div>
+</section>
+<aside>
+    <div class="wrapper">
+        <ul>
+            <li id="classify">MV分类</li>
+            <li>新歌推荐</li>
+            <li>欧美精选</li>
+            <li>日韩精选</li>
+            <li>华语精选</li>
+        </ul>
+        <div id="list">
+            <h3>新歌推荐</h3>
+            <a href=""><img src="img/12.png" alt=""/></a>
+        </div>
+    </div>
+</aside>
+<footer>
+    <img src="img/9.png" alt=""/>
+</footer>
 
 </body>
+<script>
+    function popup(){
+        alert("下载客户端");
+    }
+</script>
 </html>

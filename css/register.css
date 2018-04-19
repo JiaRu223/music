@@ -1,0 +1,77 @@
+section{
+    width: 1100px;
+    height: 650px;
+    margin-top: 50px;
+    border:1px solid lightcoral;
+    border-top: 6px solid lightcoral;
+    margin-left: 120px;
+    position: relative;
+}
+section h3{
+    padding-left: 500px;
+    display: block;
+    margin-top: 30px;
+    color: lightcoral;
+    font-size: 26px;
+    font-weight:500;
+    margin-bottom: 60px;
+}
+section label{
+    display: block;
+    padding-left: 300px;
+    padding-bottom: 15px;
+}
+section input{
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    height: 35px;
+    border-radius: 3px;
+    outline:none;
+    font-size: 16px;
+    width: 280px;
+    margin-bottom: 20px;
+    text-indent: 10px;
+}
+section .note{
+    width: 150px;
+}
+section button{
+    width: 60px;
+    height: 36px;
+    background: #bbb;
+    border: 0;
+    color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+section button:hover{
+    background-color: lightcoral;
+}
+section .sex{
+    width: 12px;
+    height: 12px;
+}
+section .agree{
+    width: 15px;
+    height: 15px;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+section .reg{
+    width: 92px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 500px;
+    font-size: 20px;
+}
+section .reg:hover{
+    background-color: lightcoral;
+}
+section a{
+    display: inline-block;
+    position: absolute;
+    left: 300px;
+    top: 536px;
+}

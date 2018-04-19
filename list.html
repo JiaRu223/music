@@ -3,8 +3,6 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>排行榜</title>
-    <title>卿风音乐</title>
-    <script type="text/javascript" src="index.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/common.css"/>
     <link rel="stylesheet" href="css/list.css"/>
@@ -35,26 +33,116 @@
         <ul class="navigation">
             <li><a href="index.html">首页</a></li>
             <li class="selected"><a href="list.html">榜单</a></li>
-            <li><a href="">下载客户端</a></li>
-            <li><a href="">MV</a></li>
-            <li><a href="">歌手</a></li>
+            <li><a href="play.html">音乐播放</a></li>
+            <li><a href="" onclick="popup()">下载客户端</a></li>
+            <li><a href="mv.html">MV</a></li>
+            <li><a href="singer.html">歌手</a></li>
         </ul>
     </div>
-    <img id="picture" src="img/图片4.png" />
 </nav>
+<section>
+    <div class="wrapper">
+        <aside>
+            <h3>热门榜单</h3>
+            <ul>
+                <li class="selected">卿风飙升榜</li>
+                <li>网络红歌榜</li>
+                <li>华语新歌榜</li>
+                <li>欧美新歌榜</li>
+                <li>日韩新歌榜</li>
+                <li>特色音乐榜</li>
+                <li>影视金曲</li>
+                <li>纯音乐</li>
+                <li>网络红歌榜</li>
+                <li>洗脑神曲</li>
+            </ul>
+        </aside>
+    </div>
+</section>
+<div class="nav_main">
+    <h3>卿风飙升榜</h3>
+    <span>2018-04-18更新</span>
+    <a href="play.html" class="btn">
+        ▷播放全部
+    </a>
+    <hr/>
+    <button onclick="checkboxed('checkbox')">全选</button>
+    <button onclick="uncheckboxed('checkbox')">取消全选</button>
+    <br/>
+    <label>
+        <a href="play.html"><input type="checkbox" name="checkbox"/> 1 &nbsp; 李袁杰 - 离人愁 </a>
+    </label><br/>
+    <hr/>
+    <label>
+        <a href="play.html"><input type="checkbox" name="checkbox"/> 2 &nbsp; 买辣椒也用券 - 起风了 </a>
+    </label><br/><hr/>
+    <label>
+        <a href="play.html"><input type="checkbox" name="checkbox"/> 3  &nbsp; 于文文 - 体面 </a>
+    </label><br/><hr/>
+    <label>
+        <a href="play.html"><input type="checkbox" name="checkbox"/> 4  &nbsp; 孙语赛 - 不仅仅是喜欢 </a>
+    </label><br/><hr/>
+    <label>
+        <a href="play.html"><input type="checkbox" name="checkbox"/> 5  &nbsp; 庄心妍 - 再见只是陌生人 </a>
+    </label><br/><hr/>
+    <label>
+        <a href="play.html"><input type="checkbox" name="checkbox"/> 6  &nbsp; 胡66 - 空空如也 </a>
+    </label><br/><hr/>
+    <label>
+        <a href="play.html"><input type="checkbox" name="checkbox"/> 7  &nbsp; 林俊杰 - 醉赤壁 </a>
+    </label><br/><hr/>
+    <label>
+        <a href="play.html"><input type="checkbox" name="checkbox"/> 8  &nbsp; 朴树 - 平凡之路 </a>
+    </label><br/><hr/>
+    <label>
+        <a href="play.html"><input type="checkbox" name="checkbox"/> 9  &nbsp; 张北北 - 拥抱你离去 </a>
+    </label><br/><hr/>
+    <label>
+        <a href="play.html"><input type="checkbox" name="checkbox"/> 10  &nbsp; 叶洛洛 - 纸短情长 </a>
+    </label><br/><hr/>
+    <label>
+        <a href="play.html"><input type="checkbox" name="checkbox"/> 11  &nbsp; 鞠文娴 - 病变 </a>
+    </label><br/><hr/>
+    <label>
+        <a href="play.html"><input type="checkbox" name="checkbox"/> 12  &nbsp; 彭清 - 回忆总想哭 </a>
+    </label><br/><hr/>
+    <label>
+        <a href="play.html"><input type="checkbox" name="checkbox"/> 13  &nbsp; 广东雨神 - 广东爱情故事 </a>
+    </label><br/><hr/>
+    <label>
+        <a href="play.html"><input type="checkbox" name="checkbox"/> 14  &nbsp; 袁娅维 - 说散就散 </a>
+    </label><br/><hr/>
+    <label>
+        <a href="play.html"><input type="checkbox" name="checkbox"/> 15  &nbsp; 周笔畅 - 最美的期待 </a>
+    </label><br/><hr/>
+    <p>查看更多内容，请下载客户端</p>&nbsp;
+    <a href=""><button onclick="popup()">立即下载</button></a>
+
+</div>
+<footer>
+    <img src="img/9.png" alt=""/>
+</footer>
 </body>
 <script>
-    var i=4;
-    onload=function(){
-        setInterval(showImg,3000);
-    };
-    function showImg(){
-        var img=document.getElementById('picture');
-        i++;
-        img.src="img/图片"+i+".png";
-        if(i>=9){
-            i=4;
+   function checkboxed(z){
+       var objNameList = document.getElementsByName(z);
+       if(null!=objNameList){
+           for(var i=0; i<objNameList.length; i++){
+               objNameList[i].checked="checked";
+           }
+           objNameList.checked="checked";
+       }
+   }
+    function uncheckboxed(s){
+        var objNameList = document.getElementsByName(s);
+        if(null!=objNameList){
+            for(var i=0; i<objNameList.length; i++){
+                objNameList[i].checked="";
+            }
         }
+    }
+    function popup(){
+        alert("下载客户端");
     }
 </script>
 </html>
